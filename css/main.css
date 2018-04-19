@@ -23,7 +23,7 @@ header {
     position: fixed;
     top: 0;
     z-index: 1;
-    background: #333;
+    /* background: #333; */
     font-family: DejaVu, sans-serif;
 }
 header #top_navbar {
@@ -36,7 +36,7 @@ header #logo img {
     width: 148px;
     background-color: white;
     padding: 5px;
-    margin-left: 150px;
+    margin-left: 170px;
 }
 header #logo img:hover {
     background-color: #FFC6C4;
@@ -46,7 +46,7 @@ header #top_nav {
 }
 header ul {
     list-style: none;
-    margin-right: 150px;
+    margin-right: 170px;
 }
 header li {
     float: left;
@@ -70,48 +70,80 @@ main {
     margin-top: 70px;
 }
 #carousel {
-    height: 87vh;
+    height: 93vh;
     overflow: hidden;
+    background-image: url('../images/1.jpg');
 /*    width: 100%;*/
     background-color: firebrick;
 }
-.carousel_left_arrow {
+
+#carousel > a {
+    display: block;
+    width: 170px;
+    height: 100%;
+    /* background-color: green; */
+    overflow: hidden;
+    opacity: 0;
+    transition: all ease-in 0.15s;
+}
+#carousel > a:hover {
+    opacity: 1;
+}
+#carousel > a img {
+    width: 50px;
+    margin-top: 260%;
+}
+#carousel > a.prev img {
+    margin-left: 50px;
+    float:left;
+}
+#carousel > a.next img {
+    margin-right: 50px;
+    float:right;
+}
+#carousel a.prev {
     float: left;
-/*    position: absolute;*/
-    left: 0;
-    width: 150px;
-    height: 90vh;
-    background-color: red;
 }
-.carousel_left_arrow span {
-    display: inline-block;
-    width: 35px;
-    height: 2px;
-    background-color: #fff;
-    vertical-align: bottom;
-}
-.myArrow {
-    margin-top: 250%;
-}
-.carousel_left_arrow span:first-child {
-    transform: rotateZ(45deg);
-/*    display: block;*/
-}
-.carousel_left_arrow span:last-child {
-    margin-left: -38px;
-    margin-bottom: 25px;
-    transform: rotateZ(-45deg);
-}
-.carousel_right_arrow {
+#carousel a.next {
     float: right;
-/*    position: absolute;*/
+/*
+    position: absolute;
     right: 0;
-    width: 150px;
-    height: 90vh;
+    width: 170px;
+    height: 100%;
     overflow: hidden;
     background-color: red;
+*/
+}
+#carousel h2 {
+    /* position: ; */
+    /* top: 35%; */
+    /* left: 35%; */
+    background: rgba(0,0,0,0.5);
+    padding: 20px 35px;
+    max-width: 800px;
+    margin: 0 auto;
+
+/*    vertical-align: middle;*/
+    color: #fff;
+    font-family: DejaVu, sans-serif;
+    font-weight: 400;
+    text-align: center;
+
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)
 }
 .koko {
+    position: absolute;;
+/*    top: 80%;*/
+    bottom: 10%;
+    left: 50%;
+    margin-right: -20%;
+    transform: translate(-50%, -50%);
     display: flex;
     justify-content: space-around;
 /*    position: absolute;*/
@@ -121,13 +153,13 @@ main {
     width: 100px;
     margin: 0 auto;
     flex-flow: row wrap;
-    margin-top: 41%;
+/*    margin-top: 34%;*/
 /*    z-index: 10;*/
 }
 
 .koko span {
     border-radius: 50px;
-    background: #000;
+    background: #fff;
 /*    border: 1px solid #fff;*/
     width: 20px;
     height: 20px;
@@ -139,7 +171,11 @@ main {
 /*    background: green;*/
     border-radius: 50px;
 }
-
+.activeImg, .koko span a:hover {
+    padding: 8px;
+    background-color: #000;
+    border: 2px solid #fff;
+}
 
 
 
