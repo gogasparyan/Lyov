@@ -3,19 +3,9 @@ a.navbar-brand img {
     width: 170px;
 
 }
-<<<<<<< HEAD
 hr {
     border-width: 1px;
     max-width: 100% !important;
-=======
-img {width: 100%;}
-ul {list-style: none;}
-a{text-decoration: none;}
-
-body {
-/*    overflow-y: hidden;*/
-    height: 100vh;
->>>>>>> 6d1e30bd24d138d02d5ce3218a8326a85ae148a7
 }
 section#services {
     padding: 5rem 0;
@@ -50,111 +40,13 @@ header.masthead {
     background-color: rgba(0, 0, 0, 0.3);
     transition: all ease 1.7s;
 }
-<<<<<<< HEAD
 nav.fixed-top {
     transition: all ease 0.5s !important;
 }
 header.masthead {
-=======
-
-
-main {
-    height: 100vh;
-    background: #ccc;
-    margin-top: 5rem;
-    display: block;
-}
-#carousel {
-    height: 100vh;
-}
-.prev, .next, .down {
-    position: absolute;
-    display: block;
-    height: 100vh;
->>>>>>> 6d1e30bd24d138d02d5ce3218a8326a85ae148a7
     overflow: hidden;
-/*    background-color: blue;*/
 }
-.prev {
-    float: left;
-    left: 0;
-    width: 7rem;
-}
-.next {
-    float: right;
-    right: 0;
-    width: 7rem;
-}
-.prev a, .next a {
-/*    width: 8rem;*/
-    display: block;
-/*    background-color: aqua;*/
-    height: 100vh;
-    text-align: center;
-    opacity: 0;
-    transition: all ease .3s;
-}
-.prev img, .next img {
-    position: relative;
-    width: 4rem;
-    top: 50%;
-    margin-top: -50%;
-}
-.prev a:hover, .next a:hover {
-    opacity: 1;
-}
-.down {
-    display: inline-block;
-    background: red;
-    width: 40rem;
-    height: 40rem;
-    border-radius: 50%;
-    margin: 0 auto;
-/*    top: 7%;*/
-    left: 46%;
-    text-align: center;
-/*    right: 50%;*/
-}
-.down img {
-    display: inline-block;
-    margin: 0 auto;
-    width: 30rem;
-    transform: rotate(90deg);
-}
-<<<<<<< HEAD
 div#cover {
-=======
-
-.carousel_item {
-    height: 100vh;
-    background-image: url(../images/1.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
-
-
-#info {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    flex-flow: row wrap;
-}
-
-
-
-
-
-
-
-
-
-/*** Footer ***/
-footer {
-/*
->>>>>>> 6d1e30bd24d138d02d5ce3218a8326a85ae148a7
     position: absolute;
     width: 100%;
     height: 100vh;
