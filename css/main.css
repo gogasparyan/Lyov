@@ -1,4 +1,7 @@
-
+@font-face {
+    font-family: DejaVuSans-ExtraLight;
+    src: url("../font/DejaVuSans-ExtraLight.ttf")
+}
 a.navbar-brand img {
     width: 170px;
 
@@ -26,7 +29,17 @@ section#contact {
 a.btn-light[href*="services"] {
     width: 60px !important;
     height: 60px !important;
-    padding: 7px;
+    padding: 5px !important;
+    border: 2px solid #fff !important;
+    box-sizing: border-box !important;
+    color: #fff;
+    z-index: 1;
+    
+}
+a.btn-light[href*="services"]:hover,
+a.btn-light[href*="services"]:active,
+a.btn-light[href*="services"]:focus {
+    box-shadow: 0px 0px 7px 0px #fff;
 }
 .row div.col-lg-12:first-of-type {
     padding: 0 !important;
@@ -61,6 +74,30 @@ div#cover {
 .navbar ul li a {
     color: #000 !important;
 }
+
+
+/*****************
+****** MAIN ******
+*****************/
+
+header h2.text-uppercase {
+    font: 66px normal normal, DejaVuSans-ExtraLight, sans-serif; 
+}
+header div.row p >i {
+    font-size: 18px;
+    font-family: DejaVuSans-ExtraLight;
+}
+div.col-lg-8 a.btn-xl {
+    background-color: rgba(157,75,65,.7) !important;
+}
+div.col-lg-8 a.btn-xl:hover,
+div.col-lg-8 a.btn-xl:active,
+div.col-lg-8 a.btn-xl:focus {
+    background-color: rgba(157,75,65,1) !important;
+    box-shadow: 0;
+    border: 0;
+}
+
 /*
 
 header.masthead:after {
